@@ -1,0 +1,14 @@
+pyshp
+langchain
+langchain_community
+langchain_openai
+langchain_anthropic
+langchain_google_genai
+langchain_core
+langchain_text_splitters
+bs4
+pillow
+tiktoken
+tqdm
+matplotlib
+
