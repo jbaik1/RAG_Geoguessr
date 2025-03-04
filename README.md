@@ -13,7 +13,7 @@ A demo is shown in the notebook RAG_Geoguessr.ipynb
 
 To install the python packages, create a new Conda or virtual Python enviornment and use
 
-```pip install requirements.txt`
+```pip install requirements.txt```
 
 Full dataset (~8GB) is from [https://www.kaggle.com/datasets/ubitquitin/geolocation-geoguessr-images-50k?resource=download](https://www.kaggle.com/datasets/ubitquitin/geolocation-geoguessr-images-50k?resource=download),
 but I have uploaded a small portion of it on this repository for demonstration purposes.
