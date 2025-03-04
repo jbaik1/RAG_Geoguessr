@@ -26,6 +26,6 @@ A simple experiment results in the following accuracices:
 | -------- | ------- |
 | GPT-4o    |   0.74  |
 |  Gemini 1.5   |   0.72  |
-| Claude 3.5 (sonnet) |   0.68  |
+| Claude 3.5 Sonnet |   0.68  |
 
 It appears that GPT-4o has the best accuracy over a sample size of 50 rounds. The rounds included countries like the United States, Thailand, Austrailia, Bolivia, and so on.
