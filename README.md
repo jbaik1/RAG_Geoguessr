@@ -29,3 +29,12 @@ A simple experiment results in the following accuracices:
 | Claude 3.5 Sonnet |   0.68  |
 
 It appears that GPT-4o has the best accuracy over a sample size of 50 rounds. The rounds included countries like the United States, Thailand, Austrailia, Bolivia, and so on.
+
+# Comparison with Modern CV Classification Models
+
+I have ran some tests on ResNet, EfficientNet, and Vision Transformer to see how they compare to the LLMs. Because they are specialized at vision tasks, it is reasonable to expect that they will perform better. See efficientnet.ipynb, ViT.ipynb, and resnet.ipynb for the demos.
+
+These pre-trained models were fine-tuned to the Geoguessr task, but it appears that none of them could do better than 50%. There still a possibility that they could perform better after a few days of training, but that would take some time. 
+I plan on updating this repository after training the best performing model on a GCP cloud server for a few days (using free credits, of course).
+
+Nevertheless, this demonstrates that RAG can enable multimodal LLMs to perform well at this complex zero-shot task, and further highlights the potential of future LLMs to be come increasingly general-purpose. I would not argue that this is approaching AGI, but some may look at it this way.
