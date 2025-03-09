@@ -11,9 +11,11 @@ A demo is shown in the notebook RAG_Geoguessr.ipynb
 
 # Setup
 
-To install the python packages, create a new Conda or virtual Python enviornment and use
+To view just the RAG demos, create a new python virtual environment and use:
 
 ```pip install requirements.txt```
+
+To run the notebooks with computer vision models, the needed packages are listed in the notebook.
 
 Full dataset (~8GB) is from [https://www.kaggle.com/datasets/ubitquitin/geolocation-geoguessr-images-50k?resource=download](https://www.kaggle.com/datasets/ubitquitin/geolocation-geoguessr-images-50k?resource=download),
 but I have uploaded a small portion of it on this repository for demonstration purposes.
@@ -32,9 +34,8 @@ It appears that GPT-4o has the best accuracy over a sample size of 50 rounds. Th
 
 # Comparison with Modern CV Classification Models
 
-I have ran some tests on ResNet, EfficientNet, and Vision Transformer to see how they compare to the LLMs. Because they are specialized at vision tasks, it is reasonable to expect that they will perform better. See efficientnet.ipynb, ViT.ipynb, and resnet.ipynb for the demos.
+I have ran some tests on ResNet, EfficientNet, and Vision Transformer to see how they compare to the LLMs. Because they are specialized at vision tasks, it is reasonable to expect that they will perform better. However, this was not the case. See efficientnet.ipynb, ViT.ipynb, and resnet.ipynb for the demos.
 
-These pre-trained models were fine-tuned to the Geoguessr task, but it appears that none of them could do better than 50%. There still a possibility that they could perform better after a few days of training, but that would take some time. 
-I plan on updating this repository after training the best performing model on a GCP cloud server for a few days (using free credits, of course).
+In addition, I fine-tuned an EfficientNet v2 model on the full dataset for about 48 hours. The best performance was around 58%, which is still low compared to the LLMs. 
 
-Nevertheless, this demonstrates that RAG can enable multimodal LLMs to perform well at this complex zero-shot task, and further highlights the potential of future LLMs to be come increasingly general-purpose. I would not argue that this is approaching AGI, but some may look at it this way.
+This demonstrates that RAG can enable multimodal LLMs to perform well at this complex zero-shot task, and further highlights the potential of future LLMs to be come increasingly general-purpose. 
